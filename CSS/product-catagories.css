@@ -1,0 +1,35 @@
+.active{
+    color: skyblue!important;
+}
+.fs-6{
+    font-size: 12px!important;
+}
+
+.text-orange{
+    color: #F76319;
+}
+
+@media screen and (min-width:992px){
+.overflow-x-scroll{
+    overflow-x: hidden!important;
+}
+    
+}
+@media screen and (max-width:992px){
+    .left-slide-container:hover nav{
+        display: block!important;
+        position: absolute;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+        z-index: 1;
+    }
+    
+
+}
+.flash-sale-card:hover{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.flash-sale-card-title{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}

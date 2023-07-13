@@ -1,0 +1,33 @@
+.select-language:hover .select-language-menu {
+  display: block !important;
+  margin-top: -1px;
+}
+.country:hover .langiage-item {
+  opacity: 1 !important;
+  transition: 0.5s;
+  background-color: white;
+}
+
+.register_banner {
+  background-image: url(https://gw.alicdn.com/imgextra/i2/O1CN01a2rB6S1CUW2cW1UoU_!!6000000000084-2-tps-2880-1248.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.btn-account {
+  background-color: orangered;
+}
+
+.darazVideoContent {
+  background-image: url(https://gw.alicdn.com/imgextra/i3/O1CN01rdfbxB27EQDmu6hP0_!!6000000007765-2-tps-2320-948.png);
+  background-size: 100% 100%;
+}
+
+.goMobileSection {
+  background-image: url(https://gw.alicdn.com/imgextra/i2/O1CN01sWyDkT1FDyaHONfDe_!!6000000000454-2-tps-1837-693.png);
+  background-size: 100% 100%;
+}
+
+.getStartContent {
+  background-color: #fd5417;
+}

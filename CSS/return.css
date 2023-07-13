@@ -1,0 +1,22 @@
+.text-primary {
+    color: #F76319 !important;
+  }
+
+  .border-primary {
+    border-color: #F76319 !important;
+  }
+
+  .fs-sm {
+    font-size: 14px !important;
+  }
+
+  #pills-tab-return .active {
+    color: white !important;
+    background-color: #F76319 !important;
+  }
+
+  #pills-tab-content-return .return-sl-number {
+    border-color: #F76319 !important;
+    padding: 1px 6px !important;
+    text-align: center;
+  }

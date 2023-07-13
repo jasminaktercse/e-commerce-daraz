@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee List</title>
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="../CSS/ADMIN/dashboard.css">
+    <script src="https://kit.fontawesome.com/8d8278a5eb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <main class="d-flex">
+        <!-- Side BAr -->
+        <section class="col-lg-3 z-3 position-relative" style="height:100vh">
+            <nav class="position-fixed bg-light h-100 col-lg-3 p-2 ">
+                <div class="offcanvas-lg offcanvas-start" id="offcanvasSideBar">
+                    <div class="offcanvas-header py-3">
+                        <a class="navbar-brand" href="#">
+                            <img src="../images/daraz.png" alt="" width="100px">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasSideBar">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                    </div>
+
+                    <!-- Offcanvas Body -->
+                    <div class="ofcanvas-body overflow-x-auto" style="height: 95vh!important;">
+
+                        <div class="my-3 d-none d-lg-block">
+                            <a class="navbar-brand" href="#">
+                                <img src="../images/daraz.png" alt="" width="100px">
+                            </a>
+                        </div>
+                        <div class="my-3">
+                            <input type="text" placeholder="Search" class="form-control" id="searchInput">
+                        </div>
+
+                        <div id="results">
+                            <ul class="nav flex-column mb-5">
+                                <div class="accordion accordion-flush" id="sidebarAccordion">
+
+                                    <li class="nav-item bg-white border-bottom name ">
+                                        <a class="nav-link text-secondary active" href="./dashboard.html">
+                                            <i class="fa-solid fa-house-user"></i><span
+                                                class="ms-2 ">Dashboard</span></a>
+                                    </li>
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./pos.html">
+                                            <i class="fa-solid fa-bag-shopping"></i><span class="ms-2 ">POS</span></a>
+                                    </li>
+
+                                    <!-- ORDER MANAGEMENT -->
+                                    <h6 class="mt-4">ORDER MANAGEMENT</h6>
+                                    <div class="accordion-item name">
+
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary name" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionOrder">
+                                                <i class="fa-solid fa-cart-shopping"></i>
+                                                <span class="ms-2 ">Orders</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionOrder" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+
+                                                        <a href="./order-all.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>All</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">2</span>
+                                                        </a>
+
+
+                                                        <a href="./order-pending.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Pending</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-confirm.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Confirmed</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-packaging.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Packaging</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-outForDelivery.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Out for delivery</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-deliverd.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Delivered</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-returned.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Returned</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-failedToDeliver.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Failed to Deliver</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./order-cancled.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Canceled</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header ">
+                                            <button class="accordion-button collapsed text-secondary " type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionRefundRequests">
+                                                <i class="fa-solid fa-receipt"></i>
+                                                <span class="ms-2 "> Refund Requests</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionRefundRequests" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./refund-pending.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1 ">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Pending</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">2</span>
+                                                        </a>
+
+
+                                                        <a href="./refund-approved.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1 ">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Approved</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./refund-refuded.html"
+                                                            class="text-decoration-none text-secondary d-flex justify-content-between p-1 ">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Refunded</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+                                                        <a href="./refund-rejected.html"
+                                                            class="text-decoration-none text-secondary  d-flex justify-content-between p-1 ">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Rejected</span>
+                                                            </span>
+                                                            <span
+                                                                class="fs-sm bg-body-secondary px-2 rounded-circle">0</span>
+                                                        </a>
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!---- PRODUCT MANAGEMENT  ----->
+                                    <h6 class="mt-4">PRODUCT MANAGEMENT</h6>
+                                    <div class="accordion-item name">
+
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionProductMmanagement">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <span class="ms-2 "> Category Setup</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionProductMmanagement" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./catagory-catagories.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Categories</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./catagory-subCatagories.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Sub Categories </span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./catagory-subSubCatagories.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Sub Sub Categories</span>
+                                                            </span>
+
+                                                        </a>
+
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary " type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionBrands">
+                                                <i class="fa-solid fa-star"></i>
+                                                <span class="ms-2 ">Brands</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionBrands" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./brands-AddNew.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Add New</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./brands-List.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> List </span>
+                                                            </span>
+
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./productAttributes.html">
+                                            <i class="fa-solid fa-file ms-1"></i>
+                                            <span class="ms-2 ">Product Attributes</span></a>
+                                    </li>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary " type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionInHouseProducts">
+                                                <i class="fa-solid fa-shop"></i>
+                                                <span class="ms-2 ">InHouse Products</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionInHouseProducts" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./inhouseProducts-products.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Products</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./inhouseProducts-bulkImport.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Bulk import </span>
+                                                            </span>
+
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary " type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionSellerProducts">
+                                                <i class="fa-brands fa-nfc-directional"></i>
+                                                <span class="ms-2 ">Seller Products</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionSellerProducts" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./sellerProducts-newProducts.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>New Products</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./sellerProducts-approved-Products.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Approved Products</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./sellerProducts-deniedProducts.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Denied Products</span>
+                                                            </span>
+
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!---- PROMOTION MANAGEMENT ----->
+                                    <h6 class="mt-4">PROMOTION MANAGEMENT</h6>
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./banners.html">
+                                            <i class="fa-solid fa-image ms-1"></i>
+                                            <span class="ms-2 ">Banners</span></a>
+                                    </li>
+
+                                    <div class="accordion-item name">
+
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionOffersDeals">
+                                                <i class="fa-solid fa-users"></i>
+                                                <span class="ms-2 ">Offers & Deals</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionOffersDeals" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./offersDeals-coupon.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Coupon</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./offerDeals-flashDeals.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Flash Deals</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./offersDeals-dealDay.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Deal of the day</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./offersDeals-feturedDeal.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Featured Deal</span>
+                                                            </span>
+
+                                                        </a>
+
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./pushNotification.html">
+                                            <i class="fa-solid fa-bell ms-1"></i>
+                                            <span class="ms-2 "> Push
+                                                Notification</span></a>
+                                    </li>
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./announcement.html">
+                                            <i class="fa-solid fa-microphone-lines ms-1"></i>
+                                            <span class="ms-2 "> Announcement </span></a>
+                                    </li>
+
+
+
+
+
+                                    <!---- HELP & SUPPORT SECTION ----->
+                                    <h6 class="mt-4">HELP & SUPPORT SECTION</h6>
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./messaged.html">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span class="ms-2 ">Messages</span></a>
+                                    </li>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./supportTicket.html">
+                                            <i class="fa-solid fa-message"></i>
+                                            <span class="ms-2 ">Support
+                                                Ticket</span></a>
+                                    </li>
+
+
+
+
+
+                                    <!---- REPORTS & ANALYSIS ----->
+                                    <h6 class="mt-4">REPORTS & ANALYSIS</h6>
+
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse"
+                                                data-bs-target="#accordionSalesTransactionReport">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <span class="ms-2 ">Sales & Transaction Report</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionSalesTransactionReport" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./salesTransactionReport-earningStatistics.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Earning Statistics</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./salesTransactionReport-inhouseSales.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Inhouse Sales</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./salesTransactionReport-sellerSales.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Seller sales</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./salesTransactionReport-orderTransaction.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Order Transactions</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./salesTransactionReport-refundTransaction.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Refund Transactions</span>
+                                                            </span>
+
+                                                        </a>
+
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionProductReport">
+                                                <i class="fa-solid fa-chart-simple"></i>
+                                                <span class="ms-2 ">Product Report</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionProductReport" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./productReport-wishlistedProducts.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span> Wishlisted Products</span>
+                                                            </span>
+                                                        </a>
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./orderReport.html">
+                                            <i class="fa-solid fa-chart-column"></i>
+                                            <span class="ms-2 ">Order
+                                                Report</span></a>
+                                    </li>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./stockReport.html">
+                                            <i class="fa-regular fa-note-sticky"></i>
+                                            <span class="ms-2 ">Stock
+                                                Report</span></a>
+                                    </li>
+
+
+                                    <!---- USER MANAGEMENT ----->
+                                    <h6 class="mt-4">USER MANAGEMENT</h6>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionCustomers">
+                                                <i class="fa-solid fa-users-rectangle"></i>
+                                                <span class="ms-2 ">Customers</span></button>
+
+
+
+
+
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionCustomers" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./customer-customeList.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Customer List</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                        <a href="./customer-customerRevies.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Customer Reviews</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./customer-wallet.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Wallet</span>
+                                                            </span>
+
+                                                        </a>
+                                                        <a href="./customer-loyaltyPoints.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Loyalty Points</span>
+                                                            </span>
+                                                        </a>
+
+
+
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionSellers">
+                                                <i class="fa-solid fa-user-tag"></i>
+                                                <span class="ms-2 ">Sellers</span></button>
+
+
+
+
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionSellers" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./sellers-addNewSeller.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Add New Seller</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./sellers-sellerList.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Seller List</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./sellers-withdraw.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Withdraws</span>
+                                                            </span>
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./subscription.html">
+                                            <i class="fa-solid fa-user"></i>
+                                            <span class="ms-2 ">
+                                                Subscribers</span></a>
+                                    </li>
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionDeliveryMan">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span class="ms-2 ">Delivery-man</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionDeliveryMan" class="accordion-collapse collapse "
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./deliveryMan-addNew.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Add new</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./deliveryMan-list.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>List</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./deliveryMan-chat.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Chat</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./deliveryMan-withdraws.html"
+                                                            class="text-decoration-none text-secondary p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Withdraws</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./deliveryMan-emergencyContact.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Emergency Contact</span>
+                                                            </span>
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-white bg-success"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#accordionEmployees">
+                                                <i class="fa-solid fa-user"></i>
+                                                <span class="ms-2 ">Employees</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionEmployees" class="accordion-collapse collapse show"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./employes-employeeRoleSetup.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Employee Role Setup</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./employes-employees.html"
+                                                            class="text-decoration-none text-success fw-bold p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Employees</span>
+                                                            </span>
+                                                        </a>
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+
+
+                                    <!----SYSTEM SETTINGS----->
+                                    <h6 class="mt-4">SYSTEM SETTINGS</h6>
+
+
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./businessSetup.html">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <span class="ms-2 ">
+                                                Business Setup</span></a>
+                                    </li>
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./third-party.html">
+                                            <i class="fa-solid fa-key"></i>
+                                            <span class="ms-2 ">
+                                                3rd party</span></a>
+                                    </li>
+
+
+                                    <div class="accordion-item name">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed text-secondary" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#accordionPagesMedia">
+                                                <i class="fa-solid fa-newspaper"></i>
+                                                <span class="ms-2">Pages & Media</span></button>
+
+                                            </button>
+                                        </h2>
+                                        <div id="accordionPagesMedia" class="accordion-collapse collapse"
+                                            data-bs-parent="#sidebarAccordion">
+                                            <div class="accordion-body">
+                                                <div id="sidebarDropdown">
+                                                    <ul class="nav flex-column px-2 ">
+                                                        <a href="./pagesMedia-pages.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Pages</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./pagesMedia-socialMedia.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Social Media Links</span>
+                                                            </span>
+                                                        </a>
+                                                        <a href="./pagesMedia-gallary.html"
+                                                            class="text-decoration-none text-secondary  p-1">
+                                                            <span class="d-flex gap-2 align-items-center">
+                                                                <i class="fa-solid fa-circle fs-xsm"></i>
+                                                                <span>Gallery</span>
+                                                            </span>
+                                                        </a>
+
+
+                                                    </ul>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <li class="nav-item bg-white border-bottom name">
+                                        <a class="nav-link text-secondary " href="./systemStup.html">
+                                            <i class="fa-solid fa-sliders"></i>
+                                            <span class="ms-2 "> System Setup</span></a>
+                                    </li>
+
+
+                                </div>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </nav>
+        </section>
+
+        <!-- RIght  Part -->
+        <section class="col-12 col-lg-9">
+            <!-- Top NavBAr -->
+            <nav class="navbar bg-body-tertiary fixed-top position-relative  shadow-sm  z-1">
+
+                <div class="container-fluid">
+                    <div class="d-flex w-100 justify-content-between justify-content-lg-end">
+                        <div class="d-lg-none">
+                            <a class="navbar-brand" href="#">
+                                <img src="../images/daraz.png" alt="" width="100px">
+                            </a>
+
+                            <span class="" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSideBar">
+                                <i class="fa-solid fa-bars-staggered"></i>
+                            </span>
+
+                        </div>
+
+
+                        <div class="d-flex">
+                            <!-- NavItem Start Toggole button -->
+                            <button class="btn d-lg-none btn-collapse" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-nav">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+
+                            <!-- NAvItem Start-->
+                            <div class="collapse menu-collapse top-100 ps-2 bg-white" id="collapse-nav">
+                                <ul class="nav flex-column flex-lg-row me-3">
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link text-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                                            href="#">
+                                            <img src="../images/ADMIN/en.png" alt="" class="me-2">
+                                            English</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">
+                                                    <img src="../images/ADMIN/en.png" alt="" class="me-2">English</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link text-secondary" href="#">
+                                            <i class="fa-solid fa-globe"></i>
+                                            <span class="d-lg-none ms-2">View website</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-secondary" href="#">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <span class="d-lg-none ms-2"> Message</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link text-secondary " href="#">
+                                            <span class="position-relative">
+                                                <i class="fa-solid fa-cart-shopping h5"></i>
+                                                <span
+                                                    class="d-none d-lg-block position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                                    0
+                                                    <span class="visually-hidden">unread messages</span>
+                                                </span>
+                                            </span>
+                                            <span class="d-lg-none ms-2"> Order list</span>
+
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                            <!-- NAvItem ENd -->
+                            <div class="dropstart me-1">
+                                <!-- Dropdown-button -->
+                                <div type="button" class="" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+
+                                    <div class="d-flex align-items-center gap-2">
+                                        <span><i class="fa-solid fa-angle-down"></i></span>
+                                        <div class="text-end text-secondary" type="button">
+                                            <span class="lh-sm d-block fw-bold">Admin</span>
+                                            <span class="lh-sm d-block">Super Admin</span>
+                                        </div>
+                                        <div>
+                                            <img src="../images/ADMIN/image-place-holder.png" alt="" width="50px"
+                                                height="50px" class="rounded-circle">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Dropdown-menu -->
+                                <ul class="dropdown-menu top-100 end-0 mt-4 shadow-lg border-0">
+                                    <li class="ps-2 pe-5">
+                                        <div class="d-flex align-items-center gap-3">
+                                            <div>
+                                                <img src="../images/ADMIN/image-place-holder.png" alt="" width="50px"
+                                                    height="50px" class="rounded-circle">
+                                            </div>
+                                            <div class="text-secondary">
+                                                <span class="lh-sm d-block fw-bold">Admin</span>
+                                                <span class="lh-sm d-block">Jahid12134@gmail.com</span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+
+
+            <!-- Category Setup Container -->
+
+            <section class="p-4 ">
+
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../images/ADMIN/brand-setup.png">
+                    <h4 class="fw-bold text-secondary">Employee List</h4>
+
+
+                </div>
+
+                <section class="mt-4 bg-white rounded-4 shadow-lg p-3">
+                    <!-- Search -->
+                    <div class="d-flex flex-column flex-lg-row gap-2  justify-content-between align-items-center my-4 mx-2">
+                        <div>
+                            <h6>Employee Roles <span class="bg-body-secondary px-2  rounded-circle  fw-bold ">0</span>
+                            </h6>
+                        </div>
+
+                        <div class="">
+                            <div class="input-group  border rounded-1">
+                                <span class="input-group-text bg-transparent border-0"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>
+                                <input type="search" class="border-0 col" style="outline: 0;">
+                                <button class="btn btn-primary  rounded-0">Search</button>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-primary">
+                                + Add New
+                            </button>
+                            
+                        </div>
+                    </div>
+                    <div class="">
+
+                        <!-- Table -->
+                        <section class=" border overflow-x-scroll my-4">
+                            <table class="table table-responsive table-hover"
+                                style="max-width: 100%; overflow-x: scroll;">
+                               
+                                <tr class="table-light table-active">
+                                    <th class="text-nowrap" style="min-width: 100px; max-width: 200px;">SL</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Name</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Email</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Phone</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Role</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Status</th>
+                                    <th class="text-nowrap" style="min-width: 150px;">Action</th>
+                                </tr>
+
+
+                            </table>
+
+                        </section>
+                    </div>
+
+
+
+
+
+                </section>
+
+
+
+            </section>
+
+
+
+            <!-- Footer -->
+
+
+            <section class="d-flex flex-column flex-lg-row gap-3 justify-content-center justify-content-lg-between p-5">
+                <div class="text-center">
+                    <span>© ebondhu. CopyRight ebondhu @2023</span>
+                </div>
+                <div class="d-flex flex-column flex-lg-row gap-4 align-items-center">
+                    <a href="" class="text-decoration-none text-secondary">
+                        <i class="fa-solid fa-gear"></i>
+                        <span>Business Setup</span>
+                    </a>
+                    <a href="" class="text-decoration-none text-secondary">
+                        <i class="fa-solid fa-user"></i>
+                        <span> Profile</span>
+                    </a>
+                    <a href="" class="text-decoration-none text-secondary">
+                        <i class="fa-solid fa-house"></i>
+                        <span>Home</span>
+                    </a>
+                    <a href="" class="text-decoration-none text-white bg-success p-2 rounded d-block">
+                        <span>Software Version 1.1</span>
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../JS/bootstrap.bundle.min.js"></script>
+    <script src="../JS/ADMIN/dashboard.js"></script>
+
+
+
+    </script>
+</body>
+
+</html>

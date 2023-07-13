@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Daraz Selleer Center</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8d8278a5eb.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Dosis:wght@200&display=swap" rel="stylesheet">
+    <!-- My styles -->
+    <link rel="stylesheet" href="./CSS/daraz-seller-center.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+</head>
+
+<body>
+    <!-------------------HEADER PART ------------------------->
+    <nav class="container d-md-flex justify-content-between p-3">
+        <div class="d-md-flex">
+
+            <ul class="nav gap-4">
+                <li>
+                    <a href="./index.html"> <img src="images/sale-on/seller-center.png" class="img-fluid" alt=""
+                        style="height: 55px;width: 112px;"></a>
+                   
+                </li>
+                <li class="position-relative select-language">
+                    <button class="btn d-flex align-items-center gap-2">
+                        <img src="images/sale-on/language.png" alt="" style="width: 20px;">
+                        <span>English</span>
+                        <img src="images/sale-on/country/bangladesh.png" alt="" style="width: 20px;">
+                        <span>Bangladesh</span>
+                        <i class="fa-solid fa-caret-down"></i>
+                    </button>
+
+                    <ul
+                        class="bg-white nav flex-column border rounded w-75 d-none select-language-menu position-absolute">
+                        <li class="nav-item  position-relative country p-1">
+                            <p class="d-flex justify-content-between align-items-center px-1">
+                                <span>
+                                    <img src="./images/sale-on/country/pakistan.png" alt="" width="26px" height="18px">
+                                    <span>Pakistan</span>
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                            <ul
+                                class="nav flex-column border rounded position-absolute top-0 start-100  opacity-0 langiage-item">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">Urdu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  position-relative country p-1">
+                            <p class="d-flex justify-content-between align-items-center px-1">
+                                <span>
+                                    <img src="./images/sale-on/country/bangladesh.png" alt="" width="26px"
+                                        height="18px">
+                                    <span>Bangladesh</span>
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                            <ul
+                                class="nav flex-column border rounded position-absolute top-0 start-100  opacity-0 langiage-item">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">Urdu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  position-relative country p-1">
+                            <p class="d-flex justify-content-between align-items-center px-1">
+                                <span>
+                                    <img src="./images/sale-on/country/mayanmar.png" alt="" width="26px" height="18px">
+                                    <span>Mayanmar</span>
+                                </span>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                            <ul
+                                class="nav flex-column border rounded position-absolute top-0 start-100  opacity-0 langiage-item">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">Urdu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  position-relative country p-1">
+                            <p class="d-flex justify-content-between align-items-center px-1">
+                                <span>
+                                    <img src="./images/sale-on/country/nepal.png" alt="" width="26px" height="18px">
+                                    <span>Nepal</span>
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                            <ul
+                                class="nav flex-column border rounded position-absolute top-0 start-100  opacity-0 langiage-item">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">Urdu</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item  position-relative country p-1">
+                            <p class="d-flex justify-content-between align-items-center px-1">
+                                <span>
+                                    <img src="./images/sale-on/country/srilanka.png" alt="" width="26px" height="18px">
+                                    <span>Sri Lanka</span>
+                                </span>
+
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </p>
+                            <ul
+                                class="nav flex-column border rounded position-absolute top-0 start-100  opacity-0 langiage-item">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">English</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link text-dark">Urdu</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="mt-3 mt-md-0">
+            <div class="d-md-flex gap-3 justify-content-center align-items-end">
+                <div class="">
+                    <label for="">Email or Phone</label>
+                    <input type="text" class="form-control" placeholder="Please Enter ">
+                </div>
+                <div class="">
+                    <label for="">Password</label>
+                    <input type="text" class="form-control" placeholder="Please Enter">
+
+                </div>
+                <div class="mt-3 text-center">
+                    <button class="btn btn-warning px-5 text-white"> Login</button>
+                </div>
+            </div>
+            <p class="text-center">
+                <a href="" class="text-dark fx-6">Forgot your password?</a>
+            </p>
+        </div>
+    </nav>
+
+
+    <!-------------------register_banner PART --------------------->
+
+    <section class="register_banner  h-auto">
+        <div class="d-md-flex py-5 container">
+            <div class="col-md-6  px-3 fw-bold">
+                <h1 class=" text-light display-3 fw-bold">Bangladesh's #1 Marketplace</h1>
+                <p class="text-light fs-5">Create a Daraz seller account in 5 minutes and reach millions of customers
+                    today!</p>
+                <img src="https://gw.alicdn.com/imgextra/i2/O1CN01CbATtG1myaDFcaPFt_!!6000000005023-2-tps-1173-790.png"
+                    alt="" class="col-4 position-absolute top-50 start-25 ms-5 d-none d-md-block" height="450px">
+            </div>
+            <div class="col-md-6 px-2 ">
+                <p class="d-flex align-items-center gap-3 px-1">
+                    <span class="text-light mb-3">Want to sell from overseas to Bangladesh?</span>
+                    <button class="btn  border text-light mb-3">Register as Global Seller</button>
+                </p>
+
+                <div class="bg-white p-2 col-12 p-4 rounded text-black-50 fw-bold">
+                    <h1 class="text-center">Create an Account</h1>
+                    <p class="text-center">Welcome! Millions of Daraz users are waiting to buy your product.</p>
+
+                    <div>
+                        <p class="mt-2"><label for="">phone</label><br>
+                            <input type="number" placeholder="+880 enter number" class="w-100 mt-2 p-2 rounded">
+                        </p>
+                        <label for="" class="mt-1">Varification</label><br>
+                        <div class="input-group flex-nowrap border border-dark rounded bg-dark-subtle mt-1">
+                            <span class="input-group-text border border-dark" id="addon-wrapping"><i
+                                    class="fa-solid fa-angles-right p-2 text-black-50"></i></span>
+                            <label class="form-control-plaintext text-center  rounded text-black-50">Please slide to
+                                verify</label>
+                        </div>
+                        <button class="border-0 rounded fw-bold p-2 text-white col-12 btn-account mt-4 ">Create
+                            Account</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----------------------------WhysellOnDaraz PART ------------------------->
+    <section class="my-5 container">
+        <h1 class="ms-3 my-5 ">Why Sell on Daraz?</h1>
+        <div class="row row-cols-1  row-cols-lg-3 row-cols-md-2 g-2">
+            <div class="col d-flex">
+                <h2>
+                    <img src="https://gw.alicdn.com/imgextra/i3/O1CN01x7m2GQ1LsdRDBgVMZ_!!6000000001355-2-tps-104-108.png"
+                        alt="" width="45px" height="50px">
+                </h2>
+                <div class="px-4">
+                    <h2>Reach</h2>
+                    <span>Millions of customers on Daraz, Bangladesh's most visited shopping destination</span>
+                </div>
+            </div>
+
+            <div class="col d-flex ">
+                <h2><img src="https://gw.alicdn.com/imgextra/i2/O1CN01mH8y9s1dLo8UaJb5f_!!6000000003720-2-tps-112-112.png"
+                        alt="" width="45px" height="50px"></h2>
+                <div class="px-4">
+                    <h2>Free Registration</h2>
+                    <span>Account registration & listing items for sale is free</span>
+                </div>
+            </div>
+            <div class="col d-flex ">
+                <h2><img src="	https://gw.alicdn.com/imgextra/i3/O1CN01zLlbgX1TrjaNqVqWo_!!6000000002436-2-tps-106-96.png
+                        " alt="" width="45px" height="50px"></h2>
+                <div class="px-4">
+                    <h2>Reliable Shipping</h2>
+                    <span>Fast, reliable and hassle free delivery through Daraz logistic network</span>
+                </div>
+            </div>
+            <div class="col d-flex ">
+                <h2><img src="https://gw.alicdn.com/imgextra/i1/O1CN01Wlx7Xo1J4avxAwqru_!!6000000000975-2-tps-106-96.png"
+                        alt="" width="45px" height="50px"></h2>
+                <div class="px-4">
+                    <h2>Timely Payments</h2>
+                    <span>Funds are safely deposited directly to your bank account on a weekly basis</span>
+                </div>
+            </div>
+            <div class="col d-flex ">
+                <h2><img src="https://gw.alicdn.com/imgextra/i1/O1CN01bPXfxS1P6K7iHfDVy_!!6000000001791-2-tps-97-87.png"
+                        alt="" width="45px" height="50px"></h2>
+                <div class="px-4">
+                    <h2>Marketing Tools</h2>
+                    <span>Find new customers & grow more with advertising and our whole range of marketing tools</span>
+                </div>
+            </div>
+            <div class="col d-flex">
+                <h2><img src="https://gw.alicdn.com/imgextra/i1/O1CN01xFHAmn1JNpZJ4ntpq_!!6000000001017-2-tps-82-74.png"
+                        alt="" width="45px" height="50px"></h2>
+                <div class="px-4">
+                    <h2>Support&Training</h2>
+                    <span>Learn all about ecommerce for free and get help with seller support and Daraz
+                        University</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!---------------------------LeftBanner AREA------------------- -->
+
+    <section class="container d-md-flex">
+        <div class="col col-md-6">
+
+            <div class="card border-0 text-bg-dark h-100 position-relative">
+                <img src="https://gw.alicdn.com/imgextra/i4/O1CN01cIlO9s1bI1dAQikpH_!!6000000003441-2-tps-956-1274.png"
+                    class="card-img-top h-100" alt="...">
+                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h3 class="text-light ">We cannot imagine doing business without Daraz now</h3>
+                    <p class="text-light ">Ali Khemani</p>
+                    <p class="text-light fs-6 d-flex justify-content-between">
+                        <span>Founder, Craftsman</span>
+                        <span>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div class="col col-md-6 px-2 px-md-4 mt-4 mt-md-0">
+
+
+            <div class="card mb-3 border-0 shadow-lg">
+                <img src="https://static-01.daraz.pk/p/c4cccaa8c9b64bdf6978a41ff7fa776f.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="btn btn-outline-danger">TESTIMONY</p>
+                    <h3>Iftekhar Jitt</h3>
+                    <p class="">Iftekhar's dream of owning a fashion store that provides trendy clothes at affordable
+                        prices came
+                        true. With Daraz, he was able to expand his market all over the country.</p>
+                </div>
+            </div>
+            <div class="card mb-3 border-0 shadow-lg">
+                <img src="https://static-01.daraz.pk/p/c2858f7f2b2ef2bc4b6ef2602233b0d9.png" class="card-img-top"
+                    alt="...">
+                <div class="card-body">
+                    <p class="btn btn-outline-danger">TESTIMONY</p>
+                    <h3>Alvina Akter</h3>
+                    <p>Alvina saw a massive increase in her sales once she became a Daraz seller. She reduced her
+                        production costs and now her monthly income is in 6-digits.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <!------------------Selling Steps ------------------------------->
+
+    <section class="container">
+        <h1 class="mt-5 mb-md-4 ms-md-4 ms-1 display-4 fw-bold"> 5 Simple Steps to Start Selling </h1>
+        <section class="row row-cols-lg-5 row-cols-md-2 text-center text-md-start">
+
+
+            <div class="py-4 px-3">
+                <div>
+                    <img src="https://gw.alicdn.com/imgextra/i4/O1CN014qQMSi1UNKubaCYdd_!!6000000002505-2-tps-244-148.png"
+                        alt="" width="55px" height="50px">
+                </div>
+                <div class="py-4 lh-sm">
+                    <h5>Signup for Free</h5>
+                    <span>Create your account through our website or mobile app with just your phone number</span>
+                </div>
+            </div>
+            <div class="py-md-4 px-4">
+                <div><img
+                        src="https://gw.alicdn.com/imgextra/i3/O1CN01bkcPBG1VOXZSWUI5y_!!6000000002643-2-tps-110-102.png"
+                        alt="" width="55px" height="50px"></div>
+
+                <div class="py-4 lh-sm">
+                    <h5>Add Profile Information</h5>
+                    <span>Complete your profile by providing your email and store name so that we can identify
+                        you</span>
+                </div>
+            </div>
+            <div class="py-4 px-3">
+                <div><img
+                        src="https://gw.alicdn.com/imgextra/i4/O1CN010q6tC71SaxSfXIU1W_!!6000000002264-2-tps-106-96.png"
+                        alt="" width="55px" height="50px"></div>
+                <div class="py-4 lh-sm">
+                    <h5>Add Address Information</h5>
+                    <span>Provide all address details of your business</span>
+                </div>
+            </div>
+            <div class="py-4 px-3">
+                <div><img
+                        src="https://gw.alicdn.com/imgextra/i3/O1CN01u0NSjf1Sfzothh7k2_!!6000000002275-2-tps-106-96.png"
+                        alt="" width="55px" height="50px"></div>
+                <div class="py-4 lh-sm">
+                    <h5>Add ID & Bank Information</h5>
+                    <span>Add in your ID & Business related details. Include necessary bank information for
+                        payments</span>
+                </div>
+            </div>
+            <div class="py-4 px-3">
+                <div><img
+                        src="https://gw.alicdn.com/imgextra/i1/O1CN01emouuS1qaXssszGVS_!!6000000005512-2-tps-119-118.png"
+                        alt="" width="55px" height="50px"></div>
+                <div class="py-4 lh-sm">
+                    <h5>List Products</h5>
+                    <span>Add products to your store through seller center. Start selling as soon as your products go
+                        live after going through quality control</span>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <!------------------ Daraz Video Content --------------------->
+
+    <section class="darazVideoContent container d-flex justify-content-end">
+        <video class="col-6 py-3"
+            src="https://darazvideo.alicdn.com/psp/20220930/00e5d682-6e59-4596-ad51-0a4564447838@@hd.mp4?auth_key=1664780958-0-0-f7321c311f1d5c8b24a4687d14d76256"
+            controls="">Your browser does not support the video TAB.</video>
+    </section>
+
+
+    <!------------------- GOMOBILESECTION -------------------->
+
+    <section class="goMobileSection container mt-5 h-auto">
+        <div class="col-9 col-md-6  py-md-5 py-2 px-md-4 px-3">
+            <p class="text-light">GO MOBILE</p>
+            <h1 class="text-light">Use the free Daraz Seller App</h1>
+            <p class="text-light">The Daraz Seller app is packed with features to help you manage and grow your
+                ecommerce business wherever you are. It gives you the freedom to take care of business details right
+                from your phone.</p>
+            <div class="pt-3 pb-5">
+                <img src="https://gw.alicdn.com/imgextra/i4/O1CN01r67sPJ1eHW2b7hiEy_!!6000000003846-2-tps-209-73.png"
+                    alt="" width="105px" height="40px">
+                <img src="https://gw.alicdn.com/imgextra/i3/O1CN010QuQka1cPBRDUxjqf_!!6000000003592-2-tps-236-74.png"
+                    alt="" width="105px" height="40px">
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="text-center my-5">Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item ">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What categories can I sell on Daraz?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Daraz has over 30 main categories of goods that you can sell your products in, including
+                        fashion, electronics, FMCG, lifestyle, health & beauty to name a few. However, we do have items
+                        that are counterfeit, dangerous and prohibited by law or cultural norms which sellers must
+                        refrain from listing. Click here to learn more
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        What is Daraz Commission?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Opening a shop on Daraz is completely free. However, Daraz does deduct a small percentage of
+                        commission from the payment of your orders. Each product commission depends on the type of
+                        category it falls under.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What documents do I need to provide during signup?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Before you signup, make sure you are ready with the following documents:
+                        i) ID information (National ID Card for individual sellers OR Business Registration Document for
+                        corporate sellers)
+                        ii) A bank cheque copy with the same title as your ID/corporate information. Daraz will be
+                        sending payments from your sales to this bank account.
+                        Click here to learn more about other document types that we accept.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFoure" aria-expanded="false" aria-controls="collapseFoure">
+                        What if incorrect information is submitted during signup?
+                    </button>
+                </h2>
+                <div id="collapseFoure" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        In case there are any issues in your seller signup form, our verification team will guide you by
+                        highlighting the incorrect information after which you can simply resubmit. Click here to learn
+                        more about seller signup rejection reasons.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------Get Start ----------------------------------->
+    <section class="getStartContent my-5">
+        <div class="d-flex justify-content-between align-items-center px-5 py-4">
+            <div>
+                <h2 class="text-light">What are you waiting for?</h2>
+                <h2 class="text-light">Start selling with Daraz today.</h2>
+            </div>
+            <div>
+                <button class=" btn border-2 border-light text-light px-5">Get Start</button>
+            </div>
+        </div>
+    </section>
+
+
+
+ <!-- -------------------Footer---------------------- -->
+
+
+ <section class="pb-3 bg-indigo">
+
+
+    <div class="container ">
+        <div class="row m-0 row-cols-1 row-cols-lg-2 g-4">
+
+            <div class="col">
+                <div class="row m-0 row-cols-1 row-cols-lg-2 g-2">
+                    <div class="col">
+
+                        <div>
+                            <ul class="nav flex-column">
+                                <h4 href="" class="text-white">Customer Care</h4>
+                                <a href="" class="text-decoration-none text-white">Help Center</a>
+                                <a href="" class="text-decoration-none text-white">How to Buy</a></li>
+                                <a href="" class="text-decoration-none text-white">Returns & Refunds</a>
+                                <a href="" class="text-decoration-none text-white">Contact Us</a>
+                                <a href="" class="text-decoration-none text-white">Terms & Conditions</a>
+                                <a href="" class="text-decoration-none text-white">CCMS - Central Complain
+                                    Management
+                                    System</a>
+                            </ul>
+
+                        </div>
+                        <div>
+                            <ul class="nav flex-column mt-5">
+
+                                <h4 class="text-white">Earn With Daraz</h4>
+
+                                <a href="" class="text-decoration-none text-white">Daraz University</a>
+                                <a href="" class="text-decoration-none text-white">Sell on Daraz</a>
+                                <a href="" class="text-decoration-none text-white">Code of Conduct</a>
+                                <a href="" class="text-decoration-none text-white">Join the Daraz Affiliate
+                                    Program</a>
+                            </ul>
+
+
+                        </div>
+                    </div>
+                    <div class="col">
+
+                        <ul class="nav flex-column">
+
+                            <h4 class="text-white">Daraz</h4>
+
+                            <a href="" class="text-decoration-none text-white">About Daraz</a>
+                            <a href="" class="text-decoration-none text-white">Digital Payments</a>
+                            <a href="" class="text-decoration-none text-white">Daraz Blog</a>
+                            <a href="" class="text-decoration-none text-white">Daraz Cares</a>
+                            <a href="" class="text-decoration-none text-white">Daraz Mart</a>
+                            <a href="" class="text-decoration-none text-white">Privacy Policy</a>
+                            <a href="" class="text-decoration-none text-white">Daraz App</a>
+                            <a href="" class="text-decoration-none text-white">Daraz Exclusives</a>
+                            <a href="" class="text-decoration-none text-white">Hungrynaki Food Delivery</a>
+                            <a href="" class="text-decoration-none text-white">Daraz Donates</a>
+                            <a href="" class="text-decoration-none text-white">Daraz BPL Live</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-flex flex-column">
+
+                <div class="d-flex gap-3">
+                    <img src="https://laz-img-cdn.alicdn.com/images/ims-web/TB1nvAvXMFY.1VjSZFnXXcFHXXa.png" alt=""
+                        height="100px" width="100px">
+                    <div>
+                        <img src="https://icms-image.slatic.net/images/ims-web/5db39a81-a04b-4f58-871e-9b9f6d044d25.png"
+                            alt="" width="42px" height="42px">
+                        <h6 class="text-warning mt-2">
+                            Happy Shopping
+                        </h6>
+                        <h6 class="text-white">
+                            Download App</h6>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <a href=""><img class="rounded" src="./images/apple-logo.png" width="100px" height="50px"
+                            alt=""></a>
+                    <a href=""><img class="rounded" src="./images/google-play.png" width="100px" height="50px"
+                            alt=""></a>
+                    <a href=""><img class="rounded" src="./images/app-gallary.png" width="100px" height="50px"
+                            alt=""></a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<section class="container py-lg-3">
+    <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-5 g-5 m-0 justify-content-center mt-5">
+            <!-- payment -->
+            <div class="col text-center">
+                    <h5 class="mb-3">Payment Methods</h5>
+                    <section class=" d-flex gap-3 flex-wrap justify-content-center">
+                            <a href=""> <img src="./images/footer/img1.png"></a>
+                            <a href=""><img src="./images/footer/img2.png"></a>
+                            <a href=""><img src="./images/footer/img3.png"></a>
+                            <a href=""> <img src="./images/footer/img4.png"></a>
+                            <a href=""><img src="./images/footer/img5.png"></a>
+                            <a href=""> <img src="./images/footer/img6.png"></a>
+                            <a href=""><img src="./images/footer/img7.png"></a>
+
+                    </section> <br>
+
+            </div>
+
+            <!-- daraz inter -->
+            <div class="col text-center">
+                    <h5 class="mb-3">Daraz International</h5>
+                    <section class="d-flex gap-2 flex-wrap justify-content-center">
+                            <a href="">
+                                    <img src="./images/footer/country1.png" height="30px" width="30px">
+                            </a>
+                            <a href="">
+                                    <img src="./images/footer/country2.png" height="30px" width="30px">
+                            </a>
+                            <a href="">
+                                    <img src="./images/footer/country3.png" height="30px" width="30px">
+                            </a>
+                            <a href="">
+                                    <img src="./images/footer/country4.png" height="30px" width="30px">
+                            </a>
+                            <a href="">
+                                    <img src="./images/footer/country5.png" height="30px" width="30px">
+                            </a>
+                    </section>
+            </div>
+            <!-- follow -->
+            <div class="col text-center">
+                    <h5 class="mb-3">Follow Us</h5>
+                    <section class="d-flex gap-2 flex-wrap justify-content-center">
+                            <a href="#" class="text-primary h4 border border-2 rounded-circle"
+                                    style="padding: 5px 7px;">
+                                    <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="#" class="text-danger h4 border border-2 rounded-circle"
+                                    style="padding: 5px 7px;">
+                                    <i class="fa-brands fa-youtube"></i>
+                            </a>
+                            <a href="#" class="text-primary h4 border border-2 rounded-circle"
+                                    style="padding: 5px 7px;">
+                                    <i class="fa-brands fa-twitter"></i>
+                            </a>
+
+                            <a href="#" class="text-danger h4 border border-2 rounded-circle"
+                                    style="padding: 5px 7px;">
+                                    <i class="fa-brands fa-instagram"></i>
+                            </a>
+
+                    </section>
+            </div>
+            <!-- verified -->
+            <div class="col text-center">
+                    <h5 class="mb-3">Verified by</h5> <br>
+                    <img id="pcimg" src="./images/footer/pci.png" class="img-fluid " alt="..." style="width: 140px;">
+            </div>
+            <!-- dbid -->
+            <div class="col text-center">
+                    <h5 class="mb-3">DBID</h5> <br>
+                    <h6>Registration Number:304903094</h6>
+            </div>
+    </div>
+    <p>© Daraz 2023</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="./JS/script.js"></script>
+</body>
+
+</html>

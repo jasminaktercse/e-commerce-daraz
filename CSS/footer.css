@@ -1,0 +1,11 @@
+
+.bg-indigo{
+    background-color: rgb(49, 49, 110);
+}
+.bg-indigo a{
+    font-size: 12px!important;
+}
+
+.bg-indigo a:hover{
+    text-decoration: underline!important;
+}
